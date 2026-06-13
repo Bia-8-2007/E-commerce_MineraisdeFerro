@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sobre Nós | Minerais de Ferro</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Hanken+Grotesk:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fdf9f4",
+                    "inverse-primary": "#cdc5c0",
+                    "on-secondary-fixed": "#2c1600",
+                    "surface-container-highest": "#e6e2dd",
+                    "secondary-container": "#fdcb9b",
+                    "on-surface": "#1c1c19",
+                    "surface-container": "#f1ede8",
+                    "on-background": "#1c1c19",
+                    "surface-tint": "#635d5a",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e6e2dd",
+                    "primary-fixed-dim": "#cdc5c0",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "outline-variant": "#cfc4bd",
+                    "surface-dim": "#ddd9d5",
+                    "on-surface-variant": "#4d4540",
+                    "secondary-fixed": "#ffdcbd",
+                    "surface": "#fdf9f4",
+                    "tertiary-fixed": "#e2e2e2",
+                    "outline": "#7e756f",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-primary-container": "#96908b",
+                    "on-primary-fixed": "#1e1b18",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-tertiary-container": "#909191",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#4b4642",
+                    "on-error": "#ffffff",
+                    "secondary": "#7c5730",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#e9e1dc",
+                    "surface-container-high": "#ebe8e3",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#2d2926",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#eebd8e",
+                    "inverse-surface": "#31302d",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container-low": "#f7f3ee",
+                    "on-secondary-container": "#79542d",
+                    "tertiary-container": "#282a2a",
+                    "tertiary": "#141616",
+                    "primary": "#181512",
+                    "on-secondary-fixed-variant": "#61401b",
+                    "error-container": "#ffdad6",
+                    "background": "#fdf9f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-lg": "48px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "stack-md": "24px",
+                    "stack-sm": "8px",
+                    "unit": "4px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-xl": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary/30">
+
+    <!-- TopAppBar -->
+    <header class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 flex justify-between items-center w-full px-4 md:px-16 h-16">
+        <div class="flex items-center gap-4">
+            <button class="text-primary hover:text-secondary transition-colors duration-400 active:opacity-70" id="menu-toggle">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </button>
+            <a href="index.html" class="hover:text-secondary transition-colors duration-400">
+                <h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary">Minerais de Ferro</h1>
+            </a>
+        </div>
+        <nav class="hidden md:flex gap-8">
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-400" href="index.html">Início</a>
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-400" href="catalogo.html">Catálogo</a>
+            <a class="text-secondary font-label-md text-label-md font-bold" href="sobre-nos.html">Sobre Nós</a>
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-400" href="contato.html">Contato</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="text-primary hover:text-secondary transition-colors duration-400 active:opacity-70">
+                <span class="material-symbols-outlined" data-icon="search">search</span>
+            </button>
+            <button aria-label="Carrinho" class="text-primary hover:text-secondary transition-colors duration-400 active:opacity-70 relative">
+                <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+                <span class="absolute -top-1 -right-1 bg-secondary text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- NavigationDrawer (Mobile Overlay) -->
+    <div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300 opacity-0" id="drawer-overlay"></div>
+    <aside class="fixed inset-y-0 left-0 z-[60] w-4/5 max-w-sm bg-surface-bright shadow-2xl transform -translate-x-full transition-transform duration-500 ease-in-out p-6 flex flex-col" id="nav-drawer">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-headline-lg font-headline-lg text-primary">Menu</h2>
+            <button class="text-on-surface-variant" id="drawer-close">
+                <span class="material-symbols-outlined" data-icon="close">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-2">
+            <a class="flex items-center gap-4 p-4 text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant/50 transition-colors" href="index.html">
+                <span class="material-symbols-outlined" data-icon="home">home</span> Início
+            </a>
+            <a class="flex items-center gap-4 p-4 text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant/50 transition-colors" href="catalogo.html">
+                <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span> Catálogo
+            </a>
+            <a class="flex items-center gap-4 p-4 bg-secondary-container text-on-secondary-container font-label-md text-label-md" href="sobre-nos.html">
+                <span class="material-symbols-outlined" data-icon="history">history</span> Sobre Nós
+            </a>
+            <a class="flex items-center gap-4 p-4 text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant/50 transition-colors" href="contato.html">
+                <span class="material-symbols-outlined" data-icon="chat">chat</span> Contato
+            </a>
+        </nav>
+    </aside>
+
+    <main class="overflow-x-hidden">
+        <!-- Hero Section -->
+        <section class="relative h-[618px] md:h-[707px] flex items-center justify-center bg-primary overflow-hidden">
+            <div class="absolute inset-0 opacity-40">
+                <img alt="Mining site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg4EY0Dlp1_-OepgFEGikrooQnSRc0Gy9mqVLPBi5RQmidB4_GYSjBm269_SyrFhKwljbNbMtIE-j79GAZAZB1FCmOpEB3DfyrWMaF6y4r9WS9wn9zDMNEbLZM9_rIVIzzGEr0_966BwC0wdcMQwST21eauKFPIyGvW4Q3Cv8-oiakQbZy0vC9B7kU5Y8O5A-NvRDSACL2n_YWw4pvAsit5lgMJ8rmaqzcj6UIj0xuVey3zkZtkOv1ktRbMzCGFG9_CaGa1-KTFgWp"/>
+            </div>
+            <div class="relative z-10 text-center px-4 max-w-4xl">
+                <h1 class="text-display-lg font-display-lg text-surface-bright mb-6 reveal-up">Nossa História</h1>
+                <p class="text-body-lg font-body-lg text-surface-bright/90 max-w-2xl mx-auto italic reveal-up" style="transition-delay: 200ms;">
+                    "A beleza bruta da terra, lapidada pela tradição de gerações."
+                </p>
+            </div>
+        </section>
+
+        <!-- Tradition Content -->
+        <section class="py-24 px-4 md:px-16 max-w-container-max mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal-up">
+                    <h2 class="text-headline-xl font-headline-xl text-primary mb-8 animate-fade-in">Tradição em Mineração e Lapidação</h2>
+                    <div class="space-y-6 text-on-surface-variant text-body-md font-body-md leading-relaxed">
+                        <p>
+                            Fundada no coração das regiões mineradoras brasileiras, a <strong>Minerais de Ferro</strong> nasceu do profundo respeito pela geologia e pelo potencial artístico oculto em cada fragmento de minério. Há mais de três décadas, nossa jornada começou com a extração ética e o estudo rigoroso da composição mineral.
+                        </p>
+                        <p>
+                            O que nos diferencia é a nossa abordagem integrada: controlamos todo o processo, desde a descoberta da jazida até o polimento final da gema. Nossos mestres lapidários utilizam técnicas ancestrais aliadas a tecnologias de precisão para revelar o "fogo interior" de minerais muitas vezes negligenciados, transformando o ferro bruto em peças de luxo atemporais.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative reveal-up" style="transition-delay: 400ms;">
+                    <div class="aspect-[4/5] overflow-hidden">
+                        <img alt="Gems and minerals" class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_EuY_k4UYC5H-7x7YAIh-iy3fy9CucthsV0uNjRdjLDNq949jPunWyj6uVwu-vFowF_ZtY8UMja52Wx736k1-ojhOGMIaGQAxHSAcPIpN7oVZPhY7jAwX9llsevDmF7j0zNX_kYD_SwMKIQzeC6mPqQm-XmNtmXuk-lnv0xJ40wF5xyTPQeXsYr9VKIIoU-rvU8z_B5mQH1X9RQyfFDxwzhPLL73a16721wtTlSVmqSmHK__1UaeAaiYmQa9w33kgozes4Hu92W7L"/>
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-surface-container border border-outline-variant p-4 hidden md:flex flex-col justify-center items-center text-center">
+                        <span class="text-headline-lg font-headline-lg text-secondary">30+</span>
+                        <span class="text-label-md font-label-md text-on-surface-variant">Anos de Maestria</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MVV Bento Grid -->
+        <section class="bg-surface-container py-24 px-4 md:px-16 animate-fade-in border-y border-outline-variant/10">
+            <div class="max-w-container-max mx-auto">
+                <div class="text-center mb-16 reveal-up">
+                    <span class="text-secondary font-label-md text-label-md tracking-widest uppercase block mb-4">Nossos Pilares</span>
+                    <h2 class="text-headline-xl font-headline-xl text-primary font-bold">Missão, Visão e Valores</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[600px]">
+                    <!-- Mission -->
+                    <div class="md:col-span-7 bg-surface p-12 border border-outline-variant/30 flex flex-col justify-center reveal-up">
+                        <div class="w-12 h-12 bg-secondary/10 flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-secondary" data-icon="explore">explore</span>
+                        </div>
+                        <h3 class="text-headline-lg font-headline-lg text-primary mb-4 font-bold">Nossa Missão</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed max-w-lg">
+                            Dignificar os recursos minerais da terra através de uma extração consciente e uma lapidação que eleve a matéria bruta ao status de obra de arte, conectando a natureza ao cotidiano de colecionadores exigentes.
+                        </p>
+                    </div>
+                    <!-- Vision -->
+                    <div class="md:col-span-5 bg-primary p-12 flex flex-col justify-center text-surface-bright reveal-up" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 bg-white/10 flex items-center justify-center mb-8">
+                            <span class="material-symbols-outlined text-surface-bright" data-icon="visibility">visibility</span>
+                        </div>
+                        <h3 class="text-headline-lg font-headline-lg mb-4 font-bold">Nossa Visão</h3>
+                        <p class="text-body-md font-body-md text-surface-bright/80 leading-relaxed">
+                            Ser reconhecida globalmente como a autoridade definitiva em minerais de ferro e gemas raras, definindo novos padrões de sustentabilidade e estética no setor de luxo mineralógico.
+                        </p>
+                    </div>
+                    <!-- Values -->
+                    <div class="md:col-span-12 bg-surface-container-highest p-12 border border-outline-variant/30 reveal-up" style="transition-delay: 400ms;">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                            <div>
+                                <h3 class="text-headline-lg font-headline-lg text-primary mb-2 font-bold">Nossos Valores</h3>
+                                <p class="text-on-surface-variant font-body-md text-body-md">A base de cada quilate que produzimos.</p>
+                            </div>
+                            <div class="flex flex-wrap gap-4">
+                                <span class="px-6 py-2 bg-surface text-primary border border-outline font-label-md text-label-md">AUTENTICIDADE</span>
+                                <span class="px-6 py-2 bg-surface text-primary border border-outline font-label-md text-label-md">ÉTICA</span>
+                                <span class="px-6 py-2 bg-surface text-primary border border-outline font-label-md text-label-md">PRECISÃO</span>
+                                <span class="px-6 py-2 bg-surface text-primary border border-outline font-label-md text-label-md">TRADIÇÃO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authority Gallery -->
+        <section class="py-24 px-4 md:px-16 max-w-container-max mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden reveal-up">
+                    <img alt="Rare mineral exhibition" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwxiiJx9sbVvqwqt3xsTOBWo5hUrCwwCIC_IY2ugE4HXM6uzsPOpQF-DbXHvox06es_nmSJ54_gYzmISahpB7wUR01ztwM1pgfNBxdGPZac4RnKL9l852L7Hnmk7YxMI4kfRpYQ9ZUWM_KVbJhOwgVjUsCLywFeBsZ_Fwqya2J839C2k_H2gE1US4ZYv62nhQ976fdylUHw06XTIU1QeeAgXkXVQlrryAK-FETgr-BF0scY-EHlPJsJOQkqUzPNcLOIs6oiOePoIz1"/>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-surface-bright font-label-md text-label-md">Exposição Permanente</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden reveal-up" style="transition-delay: 200ms;">
+                    <img alt="Precision tools" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGPY1asVbsyFN9J6mPoaGpxrxmIDPtuIz10VSbh3uNEuMRPFKWdflqP_uuTLzWcFQ44kJL6EuUuCBdM9kyfqnj5YZNGDVdmvSk4Ue3z3mYKt-QcKs8Fzmv0vcSgcRa6GPd0uOz-E_CyX3USqMfsOIEbnJvr_ICGxe4PgVxGz69Zu4moJQz-_zCAEObnROUd01HmiRyQOO8LvzMT4roj-atecpghmjmrtUpkCWlmz-19p1AubiX9wvk_Bfg8Q_EuHquzv6kkPdPrCe"/>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-surface-bright font-label-md text-label-md">Precisão Técnica</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden reveal-up" style="transition-delay: 400ms;">
+                    <img alt="Expert examination" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjwk7CdBkSVddktIR7yiqYszjvsa81SQncrZFHvrabotuz3Ap9efzm5lk9__L4P-i9nRBMCxukncWwTqX2z1_g5eRYYZgmtc1vmem4g4BrGlwpnYPlERevayHhNwVgnFXFrcda1Cw9-zQN6zPnjRwc4HM8ZDFaENlNX3mzT7FSkXhz8GKoGLRjzKwlZ_1FznOCoABmNRrrRzyDdbt_dSRmdpoAmVBUZPcnHjuk81OEyKFMyodcX4-wM2xIDSfKt4T7BdkHpFdCWkv1"/>
+                    <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                        <p class="text-surface-bright font-label-md text-label-md">Certificação de Origem</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA -->
+        <section class="bg-primary-container py-24 px-4 text-center">
+            <div class="max-w-2xl mx-auto reveal-up">
+                <h2 class="text-headline-xl font-headline-xl text-surface-bright mb-6 font-bold">Mantenha-se Conectado</h2>
+                <p class="text-body-md font-body-md text-inverse-primary mb-12">Receba atualizações exclusivas sobre nossas novas descobertas geológicas e coleções limitadas.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input class="flex-1 bg-transparent border-b border-outline-variant text-surface-bright placeholder:text-on-primary-container focus:outline-none focus:border-secondary transition-all font-body-md py-3 px-2" placeholder="Seu melhor e-mail" type="email"/>
+                    <button class="bg-secondary text-surface-bright font-label-md text-label-md px-10 py-3 hover:bg-on-secondary-fixed transition-colors premium-ease uppercase tracking-widest">Inscrever</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-surface-bright py-stack-lg w-full flex flex-col items-center">
+        <div class="max-w-container-max w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-stack-lg mb-stack-lg">
+            <!-- Brand Column -->
+            <div class="space-y-stack-sm">
+                <h2 class="font-headline-lg text-headline-lg text-surface-bright">Minerais de Ferro</h2>
+                <p class="font-body-md text-body-md text-surface-variant/60 max-w-xs">Curadoria especializada em minerais e pedras preciosas. Autenticidade, tradição e a beleza bruta da terra em sua casa.</p>
+                <div class="flex gap-4 pt-4">
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <!-- Links Column -->
+            <div class="grid grid-cols-2 gap-gutter">
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Menu</h4>
+                    <ul class="space-y-2 text-label-md text-surface-variant/60">
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="index.html">Início</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="catalogo.html">Catálogo</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Ajuda</h4>
+                    <ul class="space-y-2 text-label-md text-surface-variant/60">
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Privacidade</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Termos</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Envio</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contact Column -->
+            <div class="space-y-4">
+                <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Contato</h4>
+                <ul class="space-y-3 text-label-md text-surface-variant/60">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[18px]">call</span>
+                        +55 (11) 99999-9999
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[18px]">mail</span>
+                        contato@mineraisdeferro.com
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span>
+                        <span>Av. Paulista, 1000 - São Paulo, SP</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full border-t border-surface-variant/10 py-6 text-center">
+            <p class="font-label-md text-label-md text-surface-variant/40">© 2024 Minerais de Ferro. Autenticidade e Tradição.</p>
+        </div>
+    </footer>
+
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe bg-surface/95 border-t border-outline-variant/20 backdrop-blur-md">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant/70 font-label-md hover:text-secondary transition-colors" href="index.html">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            <span class="text-label-md font-label-md mt-1">Início</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-secondary font-bold font-label-md" href="sobre-nos.html">
+            <span class="material-symbols-outlined" data-icon="person">person</span>
+            <span class="text-label-md font-label-md mt-1">Sobre Nós</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant/70 font-label-md hover:text-secondary transition-colors" href="contato.html">
+            <span class="material-symbols-outlined" data-icon="chat">chat</span>
+            <span class="text-label-md font-label-md mt-1">Contato</span>
+        </a>
+    </nav>
+
+    <!-- Shopping Cart Logic -->
+    <script src="cart.js"></script>
+
+    <script>
+        // Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const drawerClose = document.getElementById('drawer-close');
+        const navDrawer = document.getElementById('nav-drawer');
+        const drawerOverlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            navDrawer.classList.toggle('-translate-x-full');
+            drawerOverlay.classList.toggle('hidden');
+            setTimeout(() => {
+                drawerOverlay.classList.toggle('opacity-0');
+            }, 10);
+        }
+
+        menuToggle.addEventListener('click', toggleDrawer);
+        drawerClose.addEventListener('click', toggleDrawer);
+        drawerOverlay.addEventListener('click', toggleDrawer);
+
+        // Scroll reveal animation logic
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

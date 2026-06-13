@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Catálogo de Minerais | Minerais de Ferro</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fdf9f4",
+                    "inverse-primary": "#cdc5c0",
+                    "on-secondary-fixed": "#2c1600",
+                    "surface-container-highest": "#e6e2dd",
+                    "secondary-container": "#fdcb9b",
+                    "on-surface": "#1c1c19",
+                    "surface-container": "#f1ede8",
+                    "on-background": "#1c1c19",
+                    "surface-tint": "#635d5a",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e6e2dd",
+                    "primary-fixed-dim": "#cdc5c0",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "outline-variant": "#cfc4bd",
+                    "surface-dim": "#ddd9d5",
+                    "on-surface-variant": "#4d4540",
+                    "secondary-fixed": "#ffdcbd",
+                    "surface": "#fdf9f4",
+                    "tertiary-fixed": "#e2e2e2",
+                    "outline": "#7e756f",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-primary-container": "#96908b",
+                    "on-primary-fixed": "#1e1b18",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-tertiary-container": "#909191",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#4b4642",
+                    "on-error": "#ffffff",
+                    "secondary": "#7c5730",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#e9e1dc",
+                    "surface-container-high": "#ebe8e3",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#2d2926",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#eebd8e",
+                    "inverse-surface": "#31302d",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container-low": "#f7f3ee",
+                    "on-secondary-container": "#79542d",
+                    "tertiary-container": "#282a2a",
+                    "tertiary": "#141616",
+                    "primary": "#181512",
+                    "on-secondary-fixed-variant": "#61401b",
+                    "error-container": "#ffdad6",
+                    "background": "#fdf9f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-lg": "48px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "stack-md": "24px",
+                    "stack-sm": "8px",
+                    "unit": "4px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-xl": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 docked full-width top-0 sticky flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 z-50">
+        <div class="flex items-center gap-4">
+            <h1 class="text-headline-lg-mobile font-headline-lg-mobile md:text-headline-lg md:font-headline-lg text-primary tracking-tight">
+                <a href="index.html" class="hover:text-secondary premium-transition">Minerais de Ferro</a>
+            </h1>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary premium-transition" href="index.html">Início</a>
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary premium-transition" href="sobre-nos.html">Sobre Nós</a>
+            <a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary premium-transition" href="contato.html">Contato</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button aria-label="Busca" class="hidden md:flex text-primary hover:text-secondary premium-transition">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+            <button aria-label="Carrinho" class="text-primary hover:text-secondary premium-transition relative">
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span class="absolute -top-1 -right-1 bg-secondary text-[10px] text-white rounded-full w-4 h-4 flex items-center justify-center">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header / Title -->
+    <section class="py-12 bg-surface-container-low text-center px-margin-mobile border-b border-outline-variant/20">
+        <span class="font-label-md text-label-md text-secondary tracking-widest uppercase block mb-2">Exclusividade Mineral</span>
+        <h2 class="font-display-lg text-4xl md:text-5xl text-primary font-bold">Catálogo Especializado</h2>
+        <p class="text-on-surface-variant max-w-lg mx-auto mt-4 font-body-lg">Explore minerais selecionados a dedo por nossos gemólogos especialistas para sua coleção.</p>
+    </section>
+
+    <!-- Filter & Grid Section -->
+    <main class="flex-grow py-16 max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop space-y-12">
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-4 justify-center items-center pb-4 border-b border-outline-variant/20">
+            <button class="filter-tab px-6 py-2 border border-secondary bg-secondary text-surface-bright font-label-md text-sm premium-transition" data-filter="all">TODAS</button>
+            <button class="filter-tab px-6 py-2 border border-outline hover:border-secondary hover:text-secondary font-label-md text-sm premium-transition" data-filter="Brutos">BRUTOS</button>
+            <button class="filter-tab px-6 py-2 border border-outline hover:border-secondary hover:text-secondary font-label-md text-sm premium-transition" data-filter="Lapidados">LAPIDADOS</button>
+            <button class="filter-tab px-6 py-2 border border-outline hover:border-secondary hover:text-secondary font-label-md text-sm premium-transition" data-filter="Joias">JOIAS</button>
+            <button class="filter-tab px-6 py-2 border border-outline hover:border-secondary hover:text-secondary font-label-md text-sm premium-transition" data-filter="Artesanato">ARTESANATO</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" id="catalog-grid">
+            
+            <!-- Quartzo Rosa (ID 1) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Brutos">
+                <a href="produto.html?id=1" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBebxH43VrMLeeg4bJ3XoMxO9C4oVsTHQ4VbdAgkHXi30ycKek9lpKPcu4swxG-jQp2EKNutiEW0617gQoEYxo3n3KeiqhSHRjVLwRz_7ZEvmLt7guZBOBZgwmtTthZDR-ZI5Jn5xithE6uiilkVsgAY0dG9kyva-FXMgpgRyhVvKEv2hZbUiMvEOW2HJnRMk9KT5AGehDJc5CadmfYIN97dZHuG0NV79BAdMmMM6glufidwPedW8cFSAld7VvFL-QpXiHurrV3-6iM" alt="Quartzo Rosa Bruto"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">DESTAQUE</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Quartzo Rosa Bruto</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 89,00</p>
+                </a>
+                <button data-cart-add="1" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+            <!-- Pirita (ID 2) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Brutos">
+                <a href="produto.html?id=2" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6RKjPMj_0Djx42JnVjHOQEJH7VrXIpwBJdZNhT23X1SoVepZKJBlrLXCamYVIAbTiEK1piwCsZC3eEG2RtuD02eVXmv7p40Gd7w-y23C-jmXJjbpXniIpqWCoDx5n7T1VdAgrK_koaMsR1XXg41Uc3Uo_F-3nEEAwr3XPRdCwD1V0M7waS3EOB4pecgF7hK4vkfqNyz_m9z5VChnKELc7taOu4ey_S_AnCoD6vCgxS7VeT6gPWTyR-Hh5dTQg3Ezl2SgF_dDStvMX" alt="Pirita Colecionador"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">RARO</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Pirita Colecionador</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 145,00</p>
+                </a>
+                <button data-cart-add="2" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+            <!-- Ametista (ID 3) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Lapidados">
+                <a href="produto.html?id=3" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMHjgZDwY6BO26Fzk5V0Zq7PfBgKQkiqk7R6lT089bAa0AhGjH_kYmeJODMJiCY0w4OTEDMUZNe31dn8il364jImdVjvt-w3_fPshbk82rOxiKiXrw_1MkPpevNeZhgRSEVs8ZVpwFZlEGdm-7ryCA3UGY-KefHDoShgLymiRNHbGqv3pF12yPaKF4h2Pc1NGnTO2CAdrU_fWNg2ImSIMMH4g7pcon4GUV5GY-YTgMPbCWOe2QDjO6HRoEOJuOiUSMplSyZXhcGQYm" alt="Ametista Catedral"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">EXCLUSIVO</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Ametista Catedral</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 210,00</p>
+                </a>
+                <button data-cart-add="3" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+            <!-- Hematita (ID 4) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Brutos">
+                <a href="produto.html?id=4" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWZWSXyUwwrkO8m16njva_VRoMvoB8Cp8QLbv1XniJAhgB76O-YiAIhG94BhhCk1i4KJveZ27heHUVdkeNA9ApLZx6GF3YZVM8SENdRO9I0alO1n7brJDAZit3j0U1kA9SWudg7jQtHMsAO-xILVVBQyT1kxw6rynYoEwS7x59UuJEXywgM85VpCxiyQ-oJ_EPCsBavEa-qPKrAsX_mmr60-2-wT7IRqx_oEpOXMmu6Xw306YzWQdnIXQpPgxZqTFGkMyAydqG3PGE" alt="Hematita Metálica"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">CLÁSSICO</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Hematita Metálica</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 65,00</p>
+                </a>
+                <button data-cart-add="4" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+            <!-- Colar Turmalina Negra (ID 5) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Joias">
+                <a href="produto.html?id=5" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA6gt-twwblY_217BLplahn3WjPibq0r5TymtVrNegUV5wnrwLSLFjmTo5k0guhM7mXP93ytgGtIEPE34V_QI0hc9izjutKDWecYPm9M5rTEelSkFDsEUm4DZGNEnrA4dIBz2z-Mo6dlpzCblFUdW423P3z8Du2tlXgQTXgN1GRr3jSe7sKPys8EUJUnn_hOiQRWxolX2ma4alFxqmkWjJ70_IPcJv7rftmW6b1CyIseLP2RCJ0vjGa4iMsN2X-shGWlmCJ66g8kRH" alt="Colar Turmalina Negra"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">NOVO</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Colar Turmalina Negra</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 180,00</p>
+                </a>
+                <button data-cart-add="5" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+            <!-- Escultura Jaspe (ID 6) -->
+            <div class="product-item bg-white p-4 border border-outline-variant/30 hover:border-secondary premium-transition group hover-lift" data-category="Artesanato">
+                <a href="produto.html?id=6" class="block space-y-4">
+                    <div class="relative h-64 overflow-hidden bg-surface-container-low">
+                        <img class="w-full h-full object-cover group-hover:scale-105 premium-transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfuVhwLYERHToFVLjR-MlzE8A3qp1cutU60W8V7bdTSaFIP6p75y7DBtuXXcJko9ro_mY5z_hEnOyOmNEXzVFHuTa_VqcCm6wG1SRgdOO0eC9sF6OCRwcp0VemvMjQJQ7gsm7uRb8rlIg4qFVAKBGAQq-CC8PML6IGcge0abloMNpgs5tyPlIldsF1FRXi__557qSFkWEmKEv-nkSsFhkkSq4MBYOry_NzvA3WJk4Ur5JtCLx4zknZjQDUob2DgfFZJ4TATY0jZjEc" alt="Escultura Jaspe Vermelho"/>
+                        <span class="absolute top-2 left-2 bg-secondary text-white text-[10px] px-2 py-1 font-label-md">EXCLUSIVO</span>
+                    </div>
+                    <h4 class="font-headline-lg text-body-lg text-primary font-bold">Escultura Jaspe Vermelho</h4>
+                    <p class="font-label-md text-label-md text-secondary mt-1">R$ 320,00</p>
+                </a>
+                <button data-cart-add="6" class="w-full mt-4 bg-primary text-surface-bright py-3 flex items-center justify-center gap-2 font-label-md hover:bg-secondary premium-transition">
+                    <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    ADICIONAR AO CARRINHO
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-surface-bright py-stack-lg w-full flex flex-col items-center mt-12">
+        <div class="max-w-container-max w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-stack-lg mb-stack-lg">
+            <!-- Brand Column -->
+            <div class="space-y-stack-sm">
+                <h2 class="font-headline-lg text-headline-lg text-surface-bright">Minerais de Ferro</h2>
+                <p class="font-body-md text-body-md text-surface-variant/60 max-w-xs">Curadoria especializada em minerais e pedras preciosas. Autenticidade, tradição e a beleza bruta da terra em sua casa.</p>
+                <div class="flex gap-4 pt-4">
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                    <a class="text-surface-variant/60 hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <!-- Links Column -->
+            <div class="grid grid-cols-2 gap-gutter">
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Menu</h4>
+                    <ul class="space-y-2 text-label-md text-surface-variant/60">
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="index.html">Início</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="catalogo.html">Catálogo</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Ajuda</h4>
+                    <ul class="space-y-2 text-label-md text-surface-variant/60">
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Privacidade</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Termos</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">Envio</a></li>
+                        <li><a class="hover:text-secondary-fixed transition-colors" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contact Column -->
+            <div class="space-y-4">
+                <h4 class="font-label-md text-label-md text-secondary-fixed uppercase">Contato</h4>
+                <ul class="space-y-3 text-label-md text-surface-variant/60">
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[18px]">call</span>
+                        +55 (11) 99999-9999
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-[18px]">mail</span>
+                        contato@mineraisdeferro.com
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span>
+                        <span>Av. Paulista, 1000 - São Paulo, SP</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full border-t border-surface-variant/10 py-6 text-center">
+            <p class="font-label-md text-label-md text-surface-variant/40">© 2024 Minerais de Ferro. Autenticidade e Tradição.</p>
+        </div>
+    </footer>
+
+    <!-- Bottom Mobile Nav -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe bg-surface/95 backdrop-blur-md border-t border-outline-variant/20">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant/70 font-label-md" href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-[10px] uppercase mt-1">Início</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant/70 font-label-md" href="sobre-nos.html">
+            <span class="material-symbols-outlined">person</span>
+            <span class="text-[10px] uppercase mt-1">Sobre Nós</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant/70 font-label-md" href="contato.html">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="text-[10px] uppercase mt-1">Contato</span>
+        </a>
+    </nav>
+
+    <!-- Shopping Cart Logic -->
+    <script src="cart.js"></script>
+
+    <!-- Custom Catalog Filters Logic -->
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-tab");
+        const productItems = document.querySelectorAll(".product-item");
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Remove active classes
+                filterButtons.forEach(b => {
+                    b.classList.remove("bg-secondary", "text-surface-bright", "border-secondary");
+                    b.classList.add("border-outline", "hover:border-secondary", "hover:text-secondary");
+                });
+
+                // Set active class
+                btn.classList.remove("border-outline", "hover:border-secondary", "hover:text-secondary");
+                btn.classList.add("bg-secondary", "text-surface-bright", "border-secondary");
+
+                const filter = btn.getAttribute("data-filter");
+
+                // Filter products
+                productItems.forEach(item => {
+                    const category = item.getAttribute("data-category");
+                    if (filter === "all" || category === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // Read query parameter for initial filter
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialFilter = urlParams.get("filter");
+        if (initialFilter) {
+            const initialTab = document.querySelector(`.filter-tab[data-filter="${initialFilter}"]`);
+            if (initialTab) initialTab.click();
+        }
+    </script>
+</body>
+</html>
